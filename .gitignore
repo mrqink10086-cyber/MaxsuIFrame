@@ -9,3 +9,4 @@
 *.ninja
 __pycache__/
 *.pyc
+/dist/
