@@ -1,0 +1,412 @@
+{
+  "runtime": "1.6.1170.0",
+  "image_base": "0x140000000",
+  "executable": {
+    "name": "SkyrimSE-1.6.1170.exe.unpacked.exe",
+    "sha256": "80c1ea737d33c6bfac09b101b8d77ab0f9f6630128c3ed052f9d945bed54e7e4"
+  },
+  "address_library": {
+    "name": "versionlib-1-6-1170-0.bin",
+    "sha256": "c4093c569a3c83b26587f4b9ea4c55de9ae6e73b84a2af9fb3fbd30e2fe0d452",
+    "version": "1.6.1170.0"
+  },
+  "source_contract": {
+    "hooks_file": "src/Hooks.h",
+    "sites": [
+      {
+        "id": 38627,
+        "delta": 71
+      },
+      {
+        "id": 37725,
+        "delta": 34
+      },
+      {
+        "id": 40504,
+        "delta": 20
+      }
+    ],
+    "target_id": 37275,
+    "commonlib_actor_is_ghost_ae_id": 37275,
+    "valid": true
+  },
+  "is_ghost_target": {
+    "address_library_id": 37275,
+    "rva": "0x662c90"
+  },
+  "call_sites": [
+    {
+      "name": "IsGhost call 1",
+      "id": 38627,
+      "delta": 71,
+      "function_rva": "0x6ba870",
+      "rva": "0x6ba8b7",
+      "bytes": "e8 d4 83 fa ff",
+      "opcode_is_e8": true,
+      "rel32_target_rva": "0x662c90",
+      "target_id": 37275,
+      "target_id_rva": "0x662c90",
+      "valid": true,
+      "nearby_instructions": [
+        {
+          "rva": "0x6ba8ae",
+          "bytes": "48 8b fa",
+          "mnemonic": "mov",
+          "operands": "rdi, rdx"
+        },
+        {
+          "rva": "0x6ba8b1",
+          "bytes": "48 8b d9",
+          "mnemonic": "mov",
+          "operands": "rbx, rcx"
+        },
+        {
+          "rva": "0x6ba8b4",
+          "bytes": "48 8b ca",
+          "mnemonic": "mov",
+          "operands": "rcx, rdx"
+        },
+        {
+          "rva": "0x6ba8b7",
+          "bytes": "e8 d4 83 fa ff",
+          "mnemonic": "call",
+          "operands": "0x140662c90"
+        },
+        {
+          "rva": "0x6ba8bc",
+          "bytes": "84 c0",
+          "mnemonic": "test",
+          "operands": "al, al"
+        }
+      ]
+    },
+    {
+      "name": "IsGhost call 2",
+      "id": 37725,
+      "delta": 34,
+      "function_rva": "0x68d8e0",
+      "rva": "0x68d902",
+      "bytes": "e8 89 53 fd ff",
+      "opcode_is_e8": true,
+      "rel32_target_rva": "0x662c90",
+      "target_id": 37275,
+      "target_id_rva": "0x662c90",
+      "valid": true,
+      "nearby_instructions": [
+        {
+          "rva": "0x68d8f7",
+          "bytes": "84 c0",
+          "mnemonic": "test",
+          "operands": "al, al"
+        },
+        {
+          "rva": "0x68d8f9",
+          "bytes": "75 2e",
+          "mnemonic": "jne",
+          "operands": "0x14068d929"
+        },
+        {
+          "rva": "0x68d8fb",
+          "bytes": "48 8d 8b 60 ff ff ff",
+          "mnemonic": "lea",
+          "operands": "rcx, [rbx - 0xa0]"
+        },
+        {
+          "rva": "0x68d902",
+          "bytes": "e8 89 53 fd ff",
+          "mnemonic": "call",
+          "operands": "0x140662c90"
+        },
+        {
+          "rva": "0x68d907",
+          "bytes": "84 c0",
+          "mnemonic": "test",
+          "operands": "al, al"
+        },
+        {
+          "rva": "0x68d909",
+          "bytes": "75 1e",
+          "mnemonic": "jne",
+          "operands": "0x14068d929"
+        }
+      ]
+    },
+    {
+      "name": "IsGhost call 3",
+      "id": 40504,
+      "delta": 20,
+      "function_rva": "0x737940",
+      "rva": "0x737954",
+      "bytes": "e8 37 b3 f2 ff",
+      "opcode_is_e8": true,
+      "rel32_target_rva": "0x662c90",
+      "target_id": 37275,
+      "target_id_rva": "0x662c90",
+      "valid": true,
+      "nearby_instructions": [
+        {
+          "rva": "0x737944",
+          "bytes": "80 3d 8b 40 a6 02 00",
+          "mnemonic": "cmp",
+          "operands": "byte ptr [rip + 0x2a6408b], 0"
+        },
+        {
+          "rva": "0x73794b",
+          "bytes": "75 15",
+          "mnemonic": "jne",
+          "operands": "0x140737962"
+        },
+        {
+          "rva": "0x73794d",
+          "bytes": "48 81 c1 60 ff ff ff",
+          "mnemonic": "add",
+          "operands": "rcx, -0xa0"
+        },
+        {
+          "rva": "0x737954",
+          "bytes": "e8 37 b3 f2 ff",
+          "mnemonic": "call",
+          "operands": "0x140662c90"
+        },
+        {
+          "rva": "0x737959",
+          "bytes": "84 c0",
+          "mnemonic": "test",
+          "operands": "al, al"
+        },
+        {
+          "rva": "0x73795b",
+          "bytes": "75 05",
+          "mnemonic": "jne",
+          "operands": "0x140737962"
+        }
+      ]
+    }
+  ],
+  "virtual_slots": {
+    "havok_GetClassType": {
+      "declared_slot": 1,
+      "byte_offset": "0x8",
+      "declaration_source": "header-only slot numbering; virtual dispatch slot contents read from PE vtables",
+      "hkReferencedObject": {
+        "address_library_id": 190056,
+        "table_rva": "0x17a76c8",
+        "slot": 1,
+        "byte_offset": "0x8",
+        "pointer_value": "0x140a88860",
+        "target_rva": "0xa88860",
+        "target_is_executable": true
+      },
+      "hkbNode": {
+        "address_library_id": 220251,
+        "table_rva": "0x1941260",
+        "slot": 1,
+        "byte_offset": "0x8",
+        "pointer_value": "0x140a88860",
+        "target_rva": "0xa88860",
+        "target_is_executable": true
+      },
+      "hkbClipGenerator": {
+        "address_library_id": 226785,
+        "table_rva": "0x1963e78",
+        "slot": 1,
+        "byte_offset": "0x8",
+        "pointer_value": "0x140acd740",
+        "target_rva": "0xacd740",
+        "target_is_executable": true
+      },
+      "hkbClipGenerator_target_disassembly": [
+        {
+          "rva": "0xacd740",
+          "bytes": "e9 bb 5c ff ff",
+          "mnemonic": "jmp",
+          "operands": "0x140ac3400"
+        }
+      ],
+      "hkbClipGenerator_thunk_disassembly": [
+        {
+          "rva": "0xac3400",
+          "bytes": "48 8d 05 b9 07 6f 02",
+          "mnemonic": "lea",
+          "operands": "rax, [rip + 0x26f07b9]"
+        },
+        {
+          "rva": "0xac3407",
+          "bytes": "c3",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ],
+      "hkbClipGenerator_descriptor_rva": "0x31b3bc0",
+      "hkbClipGenerator_descriptor_section": {
+        "name": ".data",
+        "section_rva": "0x1fd3000",
+        "virtual_size": "0x161e680",
+        "raw_size": "0x122600",
+        "descriptor_is_file_backed": false
+      },
+      "hkbClipGenerator_class_name_verified_from_pe": false,
+      "hkbClipGenerator_class_name_limit": "GetClassType returns a descriptor address in virtual-only .data; its class-name pointer is not file-backed in this executable.",
+      "slot_consistent": true
+    },
+    "animation_graph_manager": {
+      "wrapper_is_virtual": false,
+      "wrapper_dispatches_to_virtual": "GetAnimationGraphManagerImpl",
+      "declared_virtual_slot": 2,
+      "byte_offset": "0x10",
+      "interface_vtable_entry": {
+        "address_library_id": 205174,
+        "table_rva": "0x1871160",
+        "slot": 2,
+        "byte_offset": "0x10",
+        "pointer_value": "0x14153cf18",
+        "target_rva": "0x153cf18",
+        "target_is_executable": true
+      },
+      "TESObjectREFR_interface_subtable_entry": {
+        "address_library_id": 190265,
+        "table_rva": "0x17ae6c8",
+        "slot": 2,
+        "byte_offset": "0x10",
+        "pointer_value": "0x1402f7120",
+        "target_rva": "0x2f7120",
+        "target_is_executable": true
+      },
+      "Actor_interface_subtable_entry": {
+        "address_library_id": 207517,
+        "table_rva": "0x189e1e8",
+        "slot": 2,
+        "byte_offset": "0x10",
+        "pointer_value": "0x1406a3500",
+        "target_rva": "0x6a3500",
+        "target_is_executable": true
+      },
+      "derived_vtable_slots_executable": true
+    },
+    "GetGraphVariableImpl3": {
+      "declared_virtual_slot": 18,
+      "header_slot_comment": "0x12",
+      "byte_offset": "0x90",
+      "interface_vtable_entry": {
+        "address_library_id": 205174,
+        "table_rva": "0x1871160",
+        "slot": 18,
+        "byte_offset": "0x90",
+        "pointer_value": "0x14054c620",
+        "target_rva": "0x54c620",
+        "target_is_executable": true
+      },
+      "TESObjectREFR_interface_subtable_entry": {
+        "address_library_id": 190265,
+        "table_rva": "0x17ae6c8",
+        "slot": 18,
+        "byte_offset": "0x90",
+        "pointer_value": "0x14054c620",
+        "target_rva": "0x54c620",
+        "target_is_executable": true
+      },
+      "Actor_interface_subtable_entry": {
+        "address_library_id": 207517,
+        "table_rva": "0x189e1e8",
+        "slot": 18,
+        "byte_offset": "0x90",
+        "pointer_value": "0x1406a3610",
+        "target_rva": "0x6a3610",
+        "target_is_executable": true
+      },
+      "Actor_target_disassembly": [
+        {
+          "rva": "0x6a3610",
+          "bytes": "48 89 5c 24 08",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rsp + 8], rbx"
+        },
+        {
+          "rva": "0x6a3615",
+          "bytes": "57",
+          "mnemonic": "push",
+          "operands": "rdi"
+        },
+        {
+          "rva": "0x6a3616",
+          "bytes": "48 83 ec 20",
+          "mnemonic": "sub",
+          "operands": "rsp, 0x20"
+        },
+        {
+          "rva": "0x6a361a",
+          "bytes": "48 8b 89 c0 00 00 00",
+          "mnemonic": "mov",
+          "operands": "rcx, qword ptr [rcx + 0xc0]"
+        },
+        {
+          "rva": "0x6a3621",
+          "bytes": "49 8b d8",
+          "mnemonic": "mov",
+          "operands": "rbx, r8"
+        }
+      ],
+      "slots_are_executable": true
+    }
+  },
+  "abi_header_facts": {
+    "evidence_type": "CommonLib declarations and static_asserts only; not independently proven from executable layout",
+    "sources": {
+      "hkBaseObject_destructor_slot_00": {
+        "path": "include/RE/H/hkBaseObject.h",
+        "line": 11
+      },
+      "hkReferencedObject_GetClassType_slot_01": {
+        "path": "include/RE/H/hkReferencedObject.h",
+        "line": 32
+      },
+      "hkbNode_inherits_hkbBindable": {
+        "path": "include/RE/H/hkbNode.h",
+        "line": 11
+      },
+      "hkbBindable_inherits_hkReferencedObject": {
+        "path": "include/RE/H/hkbBindable.h",
+        "line": 12
+      },
+      "IAnimationGraphManagerHolder_GetAnimationGraphManagerImpl_slot_02": {
+        "path": "include/RE/I/IAnimationGraphManagerHolder.h",
+        "line": 27
+      },
+      "IAnimationGraphManagerHolder_GetGraphVariableImpl3_slot_12": {
+        "path": "include/RE/I/IAnimationGraphManagerHolder.h",
+        "line": 43
+      },
+      "GetAnimationGraphManager_nonvirtual_wrapper": {
+        "path": "include/RE/I/IAnimationGraphManagerHolder.h",
+        "line": 45
+      },
+      "GetAnimationGraphManager_wrapper_dispatch": {
+        "path": "src/RE/I/IAnimationGraphManagerHolder.cpp",
+        "line": 8
+      },
+      "TESObjectREFR_IAnimationGraphManagerHolder_base_offset_38": {
+        "path": "include/RE/T/TESObjectREFR.h",
+        "line": 105
+      },
+      "TESObjectREFR_GetAnimationGraphManagerImpl_override_slot_02": {
+        "path": "include/RE/T/TESObjectREFR.h",
+        "line": 231
+      }
+    },
+    "hkBaseObject_size": "0x8",
+    "hkReferencedObject_size": "0x10",
+    "hkReferencedObject_fields": {
+      "memSizeAndFlags": "0x08",
+      "referenceCount": "0x0A"
+    },
+    "IAnimationGraphManagerHolder_size": "0x8",
+    "TESObjectREFR_IAnimationGraphManagerHolder_base_offset": "0x38"
+  },
+  "limitations": [
+    "PE checks validate bytes, direct-call targets, and vtable pointer slots for this exact executable; they do not execute the plugin or prove runtime object validity.",
+    "CommonLib slot comments and static_asserts are declaration evidence. Vtable subobject association follows the declared inheritance and generated vtable order.",
+    "The audit does not establish SKSE loader behavior or gameplay correctness; no game process is started."
+  ],
+  "errors": [],
+  "valid": true
+}

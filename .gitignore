@@ -1,0 +1,11 @@
+/build/
+/package/
+.vs/
+*.obj
+*.lib
+*.exp
+*.pdb
+*.log
+*.ninja
+__pycache__/
+*.pyc

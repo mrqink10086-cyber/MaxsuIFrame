@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "ae1170",
+      "displayName": "Skyrim 1.6.1170 / SKSE 2.2.6",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ae1170",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
+        "COMMONLIBSSE_NG_PATH": "${sourceDir}/../CommonLibSSE-NG-ng"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "ae1170", "configurePreset": "ae1170", "targets": ["MaxsuIFrame"] }
+  ]
+}

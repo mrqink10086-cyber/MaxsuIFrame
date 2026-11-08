@@ -1,0 +1,7 @@
+{
+  "name": "maxsuiframe",
+  "version-string": "1.0.3",
+  "description": "Skyrim 1.6.1170 invincibility frames plugin",
+  "license": "MIT",
+  "dependencies": ["directxtk", "nlohmann-json", "rapidcsv", "spdlog"]
+}
